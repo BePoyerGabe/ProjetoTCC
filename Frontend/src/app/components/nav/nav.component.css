@@ -1,0 +1,9 @@
+.sidenav {
+    width: 150px;
+    margin-bottom: 64px;
+    background-color: hsl(221, 37%, 46%);
+}
+
+.sidenav a{
+    color: white;
+}
