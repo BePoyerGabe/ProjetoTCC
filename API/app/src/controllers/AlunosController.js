@@ -23,7 +23,7 @@ module.exports = {
         })
     },
 
-    findProject(req, res) {
+    findAluno(req, res) {
         const {id} = req.params
 
         alunosModel.findProjet(id, (alunoEncontrado) => {
@@ -35,7 +35,7 @@ module.exports = {
         })
     },
 
-    findProjectByName(req, res) {
+    findAlunoByName(req, res) {
         const {nome} = req.query
 
         alunosModel.findByName(nome, (alunoEncontrado) => {
@@ -48,7 +48,7 @@ module.exports = {
     },
 
 
-    deleteProject(req, res) {
+    deleteAluno(req, res) {
         const {id} = req.params
 
         eventosModel.delete(id, () => {

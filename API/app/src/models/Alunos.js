@@ -20,7 +20,7 @@ module.exports = {
         })
     },
 
-     findProject(id, callback) {
+     findAluno(id, callback) {
         const sqlQuery = "SELECT * FROM Alunos WHERE id = ?"
 
         db.query(sqlQuery, [id], (err, result) => {
@@ -30,7 +30,7 @@ module.exports = {
         })
     },
     
-    findProjectsByName(nome, callback) {
+    findAlunosByName(nome, callback) {
         const sqlQuery = "SELECT * FROM Alunos WHERE titulo = ?"
 
         db.query(sqlQuery, [nome], (err, result) => {
